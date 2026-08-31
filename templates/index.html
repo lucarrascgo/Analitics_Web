@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asesoría Comercial y BI – Luis Carrasco</title>
+
+    <!-- CSS desde Flask -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+    <!-- ============================
+         HERO PRINCIPAL
+    ============================ -->
+    <header>
+        <h1 class="hero-title">Impulso Comercial Basado en Datos y Ejecución Real</h1>
+        <p class="hero-subtitle">
+            Acompaño a pymes y minipymes a ordenar, optimizar y escalar sus resultados mediante modelos comerciales,
+            inteligencia de negocios aplicada y continuidad operativa. Combino experiencia real, herramientas propias
+            (POS Comercial y Herramienta Analytics) y una ejecución directa orientada a resultados.
+        </p>
+    </header>
+
+    <!-- ============================
+         SOBRE MÍ
+    ============================ -->
+    <section id="sobre-mi">
+        <h2 class="section-title">Sobre Mí</h2>
+
+        <img src="{{ url_for('static', filename='img/hero.jpg') }}" alt="Consultoría Ejecutiva">
+
+        <p>
+            Soy consultor especializado en desarrollo comercial, inteligencia de negocios y continuidad operativa.
+            He liderado marcas, equipos y operaciones durante más de una década, integrando ventas, marketing,
+            abastecimiento y análisis de datos en un modelo práctico, medible y adaptable a empresas de distintos tamaños.
+        </p>
+
+        <p>Mi propuesta se basa en:</p>
+        <ul>
+            <li>Enfoque ejecutivo y orientado a resultados.</li>
+            <li>Herramientas propias listas para operar.</li>
+            <li>Integración directa con equipos comerciales y operativos.</li>
+            <li>Modelos flexibles según la realidad del cliente.</li>
+        </ul>
+    </section>
+
+    <!-- ============================
+         VISIÓN Y MISIÓN
+    ============================ -->
+    <section id="vision-mision">
+        <h2 class="section-title">Visión y Misión</h2>
+
+        <img src="{{ url_for('static', filename='img/pymes.jpg') }}" alt="Pymes en crecimiento">
+
+        <h3 class="subsection-title">Visión</h3>
+        <p>
+            <strong>Ser un socio estratégico para las pymes y minipymes de Chile</strong>, impulsando su crecimiento mediante
+            modelos comerciales claros, herramientas de inteligencia aplicada y una ejecución disciplinada que les permita
+            competir, escalar y sostenerse en el tiempo.
+        </p>
+
+        <h3 class="subsection-title">Misión</h3>
+        <p>
+            <strong>Acompañar a pymes y minipymes en su proceso de profesionalización comercial</strong>, entregando modelos de gestión,
+            análisis de datos y continuidad operativa que permitan mejorar ventas, optimizar recursos y tomar decisiones con claridad
+            y evidencia.
+        </p>
+
+        <ul>
+            <li><strong>Orden Comercial y Ejecución Real:</strong> modelos simples, práctiles y medibles.</li>
+            <li><strong>Inteligencia Aplicada al Negocio:</strong> dashboards y análisis reales para decisiones rápidas.</li>
+            <li><strong>Acompañamiento Cercano y Flexible:</strong> trabajo directo con equipos y dueños.</li>
+        </ul>
+
+        <h3 class="subsection-title">Propósito</h3>
+        <p>
+            <strong>Impulsar el crecimiento sostenible de las pymes y minipymes</strong>, fortaleciendo su competitividad y contribuyendo
+            al desarrollo económico y social del país.
+        </p>
+    </section>
+
+    <!-- ============================
+         SERVICIOS
+    ============================ -->
+    <section id="servicios">
+        <h2 class="section-title">Servicios Profesionales</h2>
+
+        <img src="{{ url_for('static', filename='img/servicios.jpg') }}" alt="Servicios de Consultoría">
+
+        <h3 class="subsection-title">A. Optimización Comercial y Forecasting</h3>
+        <ul>
+            <li>Diseño de modelos comerciales.</li>
+            <li>Forecast de ventas y control de KPIs.</li>
+            <li>Optimización de cartera y segmentación.</li>
+            <li>Implementación del POS Comercial.</li>
+            <li>Acompañamiento ejecutivo en la ejecución del plan.</li>
+        </ul>
+
+        <h3 class="subsection-title">B. Inteligencia Comercial y BI Aplicado</h3>
+        <ul>
+            <li>Implementación de dashboards ejecutivos.</li>
+            <li>Modelos de datos comerciales.</li>
+            <li>Integración de fuentes (ERP, CRM, POS, eCommerce).</li>
+            <li>Capacitación en uso de BI para equipos comerciales.</li>
+        </ul>
+
+        <h3 class="subsection-title">C. Continuidad Operativa Comercial para Pymes</h3>
+        <ul>
+            <li>Ordenamiento comercial completo.</li>
+            <li>Definición de metas, KPIs y estructura.</li>
+            <li>Dashboard para dueños y gerencias.</li>
+            <li>Acompañamiento mensual tipo gerente comercial externo.</li>
+        </ul>
+    </section>
+
+    <!-- ============================
+         HERRAMIENTAS
+    ============================ -->
+    <section id="herramientas">
+        <h2 class="section-title">Herramientas Propias</h2>
+
+        <img src="{{ url_for('static', filename='img/dashboard.jpg') }}" alt="Dashboard Comercial">
+
+        <!-- ============================
+             VIDEO DE DEMOSTRACIÓN
+        ============================ -->
+        <h3 class="subsection-title">Demo de la Herramienta Analytics</h3>
+
+        <video controls width="100%"
+            style="border-radius: 8px;
+                   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+                   margin: 20px 0;">
+            <source src="{{ url_for('static', filename='img/App_Analitics.mp4') }}" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+
+        <h3 class="subsection-title">POS Comercial</h3>
+        <p>
+            Modelo de gestión que ordena la operación comercial, define metas, estructura la cartera y mejora la ejecución.
+            Permite mayor conversión, mejor seguimiento y visibilidad ejecutiva para la toma de decisiones.
+        </p>
+
+        <h3 class="subsection-title">Herramienta Analytics</h3>
+        <p>
+            Dashboard ejecutivo que integra ventas, inventarios, rotación, forecast y performance comercial en un solo lugar.
+            Convierte datos dispersos en decisiones rápidas, precisas y accionables.
+        </p>
+    </section>
+
+    <!-- ============================
+         CONTACTO
+    ============================ -->
+    <section id="contacto">
+        <h2 class="section-title">Contacto</h2>
+
+        <img src="{{ url_for('static', filename='img/contacto.jpg') }}" alt="Contacto Profesional">
+
+        <p class="contact-line"><strong>Consultor:</strong> Luis Carrasco Gonzalez</p>
+        <p class="contact-line"><strong>Ubicación:</strong> Santiago, Chile</p>
+        <p class="contact-line"><strong>Servicios:</strong> Asesoría Comercial, BI Aplicado, Continuidad Operativa</p>
+
+        <a href="mailto:lucarrascog@gmail.com" class="cta-btn">Agendar reunión</a>
+    </section>
+
+    <!-- ============================
+         FOOTER
+    ============================ -->
+    <footer>
+        &copy; <span id="year"></span> Luis Carrasco Gonzalez – Asesoría Comercial y BI para Pymes y Minipymes.
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
